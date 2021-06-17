@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42368820802221678240303E /* Pods_travelmay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6D113B66BBA0A9AA6BDB20 /* Pods_travelmay.framework */; };
 		C6C74E4C267BDEE5003FBFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E4B267BDEE5003FBFC4 /* AppDelegate.swift */; };
 		C6C74E4E267BDEE5003FBFC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E4D267BDEE5003FBFC4 /* SceneDelegate.swift */; };
 		C6C74E50267BDEE5003FBFC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E4F267BDEE5003FBFC4 /* ViewController.swift */; };
 		C6C74E53267BDEE5003FBFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C74E51267BDEE5003FBFC4 /* Main.storyboard */; };
 		C6C74E55267BDEE8003FBFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C74E54267BDEE8003FBFC4 /* Assets.xcassets */; };
 		C6C74E58267BDEE8003FBFC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C74E56267BDEE8003FBFC4 /* LaunchScreen.storyboard */; };
+		C6C74E63267BE064003FBFC4 /* Wisata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E62267BE064003FBFC4 /* Wisata.swift */; };
+		C6C74E66267BE56A003FBFC4 /* ApiRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E65267BE56A003FBFC4 /* ApiRequests.swift */; };
+		C6C74E68267BEB8E003FBFC4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E67267BEB8E003FBFC4 /* NetworkManager.swift */; };
+		C6C74E6A267BEC9D003FBFC4 /* WisataResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E69267BEC9D003FBFC4 /* WisataResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2808D064B3C448970134FFCD /* Pods-travelmay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelmay.release.xcconfig"; path = "Target Support Files/Pods-travelmay/Pods-travelmay.release.xcconfig"; sourceTree = "<group>"; };
+		9C6D113B66BBA0A9AA6BDB20 /* Pods_travelmay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travelmay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82EEC6EE7C95C9490F231FB /* Pods-travelmay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelmay.debug.xcconfig"; path = "Target Support Files/Pods-travelmay/Pods-travelmay.debug.xcconfig"; sourceTree = "<group>"; };
 		C6C74E48267BDEE5003FBFC4 /* travelmay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelmay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C74E4B267BDEE5003FBFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6C74E4D267BDEE5003FBFC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		C6C74E54267BDEE8003FBFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6C74E57267BDEE8003FBFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6C74E59267BDEE8003FBFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6C74E62267BE064003FBFC4 /* Wisata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wisata.swift; sourceTree = "<group>"; };
+		C6C74E65267BE56A003FBFC4 /* ApiRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequests.swift; sourceTree = "<group>"; };
+		C6C74E67267BEB8E003FBFC4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C6C74E69267BEC9D003FBFC4 /* WisataResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42368820802221678240303E /* Pods_travelmay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36BC9F88C6E9F74813975953 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A82EEC6EE7C95C9490F231FB /* Pods-travelmay.debug.xcconfig */,
+				2808D064B3C448970134FFCD /* Pods-travelmay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4922128B9AE1914651D02A02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C6D113B66BBA0A9AA6BDB20 /* Pods_travelmay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6C74E3F267BDEE5003FBFC4 = {
 			isa = PBXGroup;
 			children = (
 				C6C74E4A267BDEE5003FBFC4 /* travelmay */,
 				C6C74E49267BDEE5003FBFC4 /* Products */,
+				36BC9F88C6E9F74813975953 /* Pods */,
+				4922128B9AE1914651D02A02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +88,51 @@
 		C6C74E4A267BDEE5003FBFC4 /* travelmay */ = {
 			isa = PBXGroup;
 			children = (
+				C6C74E64267BE549003FBFC4 /* services */,
+				C6C74E61267BE039003FBFC4 /* controllers */,
+				C6C74E60267BE033003FBFC4 /* views */,
+				C6C74E5F267BE025003FBFC4 /* models */,
 				C6C74E4B267BDEE5003FBFC4 /* AppDelegate.swift */,
 				C6C74E4D267BDEE5003FBFC4 /* SceneDelegate.swift */,
-				C6C74E4F267BDEE5003FBFC4 /* ViewController.swift */,
-				C6C74E51267BDEE5003FBFC4 /* Main.storyboard */,
 				C6C74E54267BDEE8003FBFC4 /* Assets.xcassets */,
 				C6C74E56267BDEE8003FBFC4 /* LaunchScreen.storyboard */,
 				C6C74E59267BDEE8003FBFC4 /* Info.plist */,
 			);
 			path = travelmay;
+			sourceTree = "<group>";
+		};
+		C6C74E5F267BE025003FBFC4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				C6C74E62267BE064003FBFC4 /* Wisata.swift */,
+				C6C74E69267BEC9D003FBFC4 /* WisataResults.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		C6C74E60267BE033003FBFC4 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C6C74E51267BDEE5003FBFC4 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C6C74E61267BE039003FBFC4 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6C74E4F267BDEE5003FBFC4 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C6C74E64267BE549003FBFC4 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				C6C74E65267BE56A003FBFC4 /* ApiRequests.swift */,
+				C6C74E67267BEB8E003FBFC4 /* NetworkManager.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6C74E5C267BDEE8003FBFC4 /* Build configuration list for PBXNativeTarget "travelmay" */;
 			buildPhases = (
+				90A730311E0AE70504CA440F /* [CP] Check Pods Manifest.lock */,
 				C6C74E44267BDEE5003FBFC4 /* Sources */,
 				C6C74E45267BDEE5003FBFC4 /* Frameworks */,
 				C6C74E46267BDEE5003FBFC4 /* Resources */,
+				237F84BE091EA59344905C37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +202,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		237F84BE091EA59344905C37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-travelmay/Pods-travelmay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-travelmay/Pods-travelmay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-travelmay/Pods-travelmay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90A730311E0AE70504CA440F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-travelmay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6C74E44267BDEE5003FBFC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C74E68267BEB8E003FBFC4 /* NetworkManager.swift in Sources */,
+				C6C74E6A267BEC9D003FBFC4 /* WisataResults.swift in Sources */,
+				C6C74E63267BE064003FBFC4 /* Wisata.swift in Sources */,
 				C6C74E50267BDEE5003FBFC4 /* ViewController.swift in Sources */,
+				C6C74E66267BE56A003FBFC4 /* ApiRequests.swift in Sources */,
 				C6C74E4C267BDEE5003FBFC4 /* AppDelegate.swift in Sources */,
 				C6C74E4E267BDEE5003FBFC4 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +399,7 @@
 		};
 		C6C74E5D267BDEE8003FBFC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82EEC6EE7C95C9490F231FB /* Pods-travelmay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +419,7 @@
 		};
 		C6C74E5E267BDEE8003FBFC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2808D064B3C448970134FFCD /* Pods-travelmay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
