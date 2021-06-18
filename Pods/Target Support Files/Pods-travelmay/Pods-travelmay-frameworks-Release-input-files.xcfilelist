@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-travelmay/Pods-travelmay-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Loading/Loading.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework

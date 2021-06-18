@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="106" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="travelmay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yCf-cy-dOw">
+                        <rect key="frame" x="10" y="10" width="80" height="63"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="6kh-HL-thL"/>
+                            <constraint firstAttribute="height" constant="63" id="equ-6L-fzU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-2f-i2b">
+                        <rect key="frame" x="120" y="31" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NaO-2f-i2b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="35f-NK-ZFZ"/>
+                    <constraint firstItem="yCf-cy-dOw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Grz-SG-HHr"/>
+                    <constraint firstAttribute="bottom" secondItem="yCf-cy-dOw" secondAttribute="bottom" constant="10" id="WBC-6k-WoL"/>
+                    <constraint firstAttribute="bottom" secondItem="NaO-2f-i2b" secondAttribute="bottom" constant="31" id="dcO-yz-XN9"/>
+                    <constraint firstItem="yCf-cy-dOw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="mrh-2I-5ZO"/>
+                    <constraint firstItem="NaO-2f-i2b" firstAttribute="leading" secondItem="yCf-cy-dOw" secondAttribute="trailing" constant="30" id="qP1-Wt-Cdd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageWisata" destination="yCf-cy-dOw" id="SmJ-jA-Slq"/>
+                <outlet property="titleLabel" destination="NaO-2f-i2b" id="Bpe-YG-h9Q"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="153.01339285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

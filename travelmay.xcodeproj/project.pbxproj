@@ -18,6 +18,8 @@
 		C6C74E66267BE56A003FBFC4 /* ApiRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E65267BE56A003FBFC4 /* ApiRequests.swift */; };
 		C6C74E68267BEB8E003FBFC4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E67267BEB8E003FBFC4 /* NetworkManager.swift */; };
 		C6C74E6A267BEC9D003FBFC4 /* WisataResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E69267BEC9D003FBFC4 /* WisataResults.swift */; };
+		C6C74E6F267C4938003FBFC4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E6D267C4938003FBFC4 /* CustomTableViewCell.swift */; };
+		C6C74E70267C4938003FBFC4 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C74E6E267C4938003FBFC4 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		C6C74E65267BE56A003FBFC4 /* ApiRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequests.swift; sourceTree = "<group>"; };
 		C6C74E67267BEB8E003FBFC4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C6C74E69267BEC9D003FBFC4 /* WisataResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataResults.swift; sourceTree = "<group>"; };
+		C6C74E6D267C4938003FBFC4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C6C74E6E267C4938003FBFC4 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				C6C74E51267BDEE5003FBFC4 /* Main.storyboard */,
+				C6C74E6D267C4938003FBFC4 /* CustomTableViewCell.swift */,
+				C6C74E6E267C4938003FBFC4 /* CustomTableViewCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			files = (
 				C6C74E58267BDEE8003FBFC4 /* LaunchScreen.storyboard in Resources */,
 				C6C74E55267BDEE8003FBFC4 /* Assets.xcassets in Resources */,
+				C6C74E70267C4938003FBFC4 /* CustomTableViewCell.xib in Resources */,
 				C6C74E53267BDEE5003FBFC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +258,7 @@
 			files = (
 				C6C74E68267BEB8E003FBFC4 /* NetworkManager.swift in Sources */,
 				C6C74E6A267BEC9D003FBFC4 /* WisataResults.swift in Sources */,
+				C6C74E6F267C4938003FBFC4 /* CustomTableViewCell.swift in Sources */,
 				C6C74E63267BE064003FBFC4 /* Wisata.swift in Sources */,
 				C6C74E50267BDEE5003FBFC4 /* ViewController.swift in Sources */,
 				C6C74E66267BE56A003FBFC4 /* ApiRequests.swift in Sources */,
