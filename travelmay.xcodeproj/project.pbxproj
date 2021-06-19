@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42368820802221678240303E /* Pods_travelmay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6D113B66BBA0A9AA6BDB20 /* Pods_travelmay.framework */; };
+		C652D756267D86490018D6C4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652D755267D86490018D6C4 /* AboutViewController.swift */; };
 		C6C74E4C267BDEE5003FBFC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E4B267BDEE5003FBFC4 /* AppDelegate.swift */; };
 		C6C74E4E267BDEE5003FBFC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E4D267BDEE5003FBFC4 /* SceneDelegate.swift */; };
 		C6C74E50267BDEE5003FBFC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E4F267BDEE5003FBFC4 /* ViewController.swift */; };
@@ -20,12 +21,14 @@
 		C6C74E6A267BEC9D003FBFC4 /* WisataResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E69267BEC9D003FBFC4 /* WisataResults.swift */; };
 		C6C74E6F267C4938003FBFC4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C74E6D267C4938003FBFC4 /* CustomTableViewCell.swift */; };
 		C6C74E70267C4938003FBFC4 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C74E6E267C4938003FBFC4 /* CustomTableViewCell.xib */; };
+		C6D5BB26267C987400800D43 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5BB25267C987400800D43 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2808D064B3C448970134FFCD /* Pods-travelmay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelmay.release.xcconfig"; path = "Target Support Files/Pods-travelmay/Pods-travelmay.release.xcconfig"; sourceTree = "<group>"; };
 		9C6D113B66BBA0A9AA6BDB20 /* Pods_travelmay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travelmay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82EEC6EE7C95C9490F231FB /* Pods-travelmay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelmay.debug.xcconfig"; path = "Target Support Files/Pods-travelmay/Pods-travelmay.debug.xcconfig"; sourceTree = "<group>"; };
+		C652D755267D86490018D6C4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		C6C74E48267BDEE5003FBFC4 /* travelmay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelmay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C74E4B267BDEE5003FBFC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6C74E4D267BDEE5003FBFC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		C6C74E69267BEC9D003FBFC4 /* WisataResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataResults.swift; sourceTree = "<group>"; };
 		C6C74E6D267C4938003FBFC4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C6C74E6E267C4938003FBFC4 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		C6D5BB25267C987400800D43 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				C6C74E4F267BDEE5003FBFC4 /* ViewController.swift */,
+				C6D5BB25267C987400800D43 /* DetailViewController.swift */,
+				C652D755267D86490018D6C4 /* AboutViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D5BB26267C987400800D43 /* DetailViewController.swift in Sources */,
 				C6C74E68267BEB8E003FBFC4 /* NetworkManager.swift in Sources */,
 				C6C74E6A267BEC9D003FBFC4 /* WisataResults.swift in Sources */,
 				C6C74E6F267C4938003FBFC4 /* CustomTableViewCell.swift in Sources */,
@@ -263,6 +270,7 @@
 				C6C74E50267BDEE5003FBFC4 /* ViewController.swift in Sources */,
 				C6C74E66267BE56A003FBFC4 /* ApiRequests.swift in Sources */,
 				C6C74E4C267BDEE5003FBFC4 /* AppDelegate.swift in Sources */,
+				C652D756267D86490018D6C4 /* AboutViewController.swift in Sources */,
 				C6C74E4E267BDEE5003FBFC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

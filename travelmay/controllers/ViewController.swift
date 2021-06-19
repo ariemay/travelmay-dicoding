@@ -22,11 +22,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.loading.start(.circle(line: .blue, line: 3.0))
         self.networkProvider = provider
-        networkProvider.getTravelPlaces { results in
+        networkProvider.getTravelPlaces(completion: { results in
             self.data = results
             self.wisataTV.reloadData()
             self.view.loading.stop()
-        }
+        },
+        sendError: { error in
+            let alert = UIAlertController(title: "Getting List Error", message: "You're not connected to internet cuy", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            self.view.loading.stop()
+        })
         
         self.registerTableViewCells()
         
@@ -40,7 +46,6 @@ class ViewController: UIViewController {
         self.wisataTV.register(textFieldCell,
                                 forCellReuseIdentifier: "CustomTableViewCell")
     }
-    
     
 
 }
@@ -75,9 +80,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        navigationController.
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = (self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController"))! as! DetailViewController
+        detailVC.delegate = self
+        detailVC.data = data[indexPath.row]
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 enum WisataError: Error {
