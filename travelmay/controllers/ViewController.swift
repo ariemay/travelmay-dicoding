@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
+        self.title = "Home"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         self.view.loading.start(.circle(line: .blue, line: 3.0))
         self.networkProvider = provider
         networkProvider.getTravelPlaces(completion: { results in
@@ -38,6 +41,8 @@ class ViewController: UIViewController {
         
         self.wisataTV.dataSource = self
         self.wisataTV.delegate = self
+        
+        wisataTV.contentInset = UIEdgeInsets(top: 0,left: 0,bottom: 50,right: 0)
     }
 
     private func registerTableViewCells() {
@@ -85,6 +90,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         detailVC.delegate = self
         detailVC.data = data[indexPath.row]
         self.navigationController?.pushViewController(detailVC, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
